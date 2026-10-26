@@ -1,0 +1,47 @@
+-- Table brute : copie fidèle du fichier DVF 2024 (Île-de-France).
+-- Toutes les colonnes sont en TEXT, le typage se fera à l'étape de nettoyage.
+
+DROP TABLE IF EXISTS dvf_brut;
+
+CREATE TABLE dvf_brut (
+    id_mutation                  TEXT,
+    date_mutation                TEXT,
+    numero_disposition           TEXT,
+    nature_mutation              TEXT,
+    valeur_fonciere              TEXT,
+    adresse_numero               TEXT,
+    adresse_suffixe              TEXT,
+    adresse_nom_voie             TEXT,
+    adresse_code_voie            TEXT,
+    code_postal                  TEXT,
+    code_commune                 TEXT,
+    nom_commune                  TEXT,
+    code_departement             TEXT,
+    ancien_code_commune          TEXT,
+    ancien_nom_commune           TEXT,
+    id_parcelle                  TEXT,
+    ancien_id_parcelle           TEXT,
+    numero_volume                TEXT,
+    lot1_numero                  TEXT,
+    lot1_surface_carrez          TEXT,
+    lot2_numero                  TEXT,
+    lot2_surface_carrez          TEXT,
+    lot3_numero                  TEXT,
+    lot3_surface_carrez          TEXT,
+    lot4_numero                  TEXT,
+    lot4_surface_carrez          TEXT,
+    lot5_numero                  TEXT,
+    lot5_surface_carrez          TEXT,
+    nombre_lots                  TEXT,
+    code_type_local              TEXT,
+    type_local                   TEXT,
+    surface_reelle_bati          TEXT,
+    nombre_pieces_principales    TEXT,
+    code_nature_culture          TEXT,
+    nature_culture               TEXT,
+    code_nature_culture_speciale TEXT,
+    nature_culture_speciale      TEXT,
+    surface_terrain              TEXT,
+    longitude                    TEXT,
+    latitude                     TEXT
+);
